@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+            /* header */
+
+header{
+    padding: 20px;
+    background-color: rgb(227, 230, 243);
+    box-shadow: 0 0 8px rgb(139, 139, 139);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation .blog a{
+    color: rgb(8, 123, 113);
+}
+
+.navigation .blog{
+    border-bottom: 3px solid rgb(8, 123, 113);
+}
+
+.navigation a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+
+.navigation a:hover{
+    color: rgb(8, 123, 113);
+    border-bottom: 3px solid rgb(8, 123, 113);
+}
+
+.navigation i{
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(58, 58, 58);
+}
+
+.navigation i:hover{
+    color: rgb(8, 123, 113);
+    transition: .7s;
+}
+
+.menu-icon{
+    font-size: 25px;
+    display: none;
+}
+
+
+
+            /* menu */
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    height: 100vh;
+    width: 60%;
+    display: none;
+    animation-name: animation;
+    animation-duration: .5s;
+}
+
+.menu-x{
+    font-size: 30px;
+    position: absolute;
+    top: 22px;
+    right: 19px;
+}
+
+.menu-nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 70vh;
+    gap: 10px;
+}
+
+.menu-nav .blog a{
+    color: rgb(8, 123, 113);
+    border-bottom: 3px solid rgb(8, 123, 113);
+}
+
+.menu-nav a{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+
+.menu-nav a:hover{
+    color: rgb(8, 123, 113);
+    border-bottom: 3px solid rgb(8, 123, 113);
+}
+
+.menu-nav i{
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(58, 58, 58);
+}
+
+.menu-nav i:hover{
+    color: rgb(8, 123, 113);
+    transition: .7s;
+}
+
+.show{
+    display: flex;
+}
+
+
+
+            /* first-section */
+
+.first-section{
+    background-image: url(./img/b19.jpg);
+    background-position: top center;
+    background-size: cover;
+    height: 50vh;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 100px;
+}       
+
+.first-section h1{
+    color: white;
+    font-size: 50px;
+}
+
+.first-section p{
+    font-size: 20px;
+    color: rgb(216, 216, 216);
+}
+
+
+
+            /* cards */
+        
+.cards{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 100px;
+    margin-bottom: 100px;
+    padding: 0 20px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card-img img{
+    height: 350px;
+    width: 600px;
+    object-fit: cover;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-text h2{
+    font-size: 25px;
+}
+
+.card-text p{
+    font-size: 20px;
+    color: rgb(53, 53, 53);
+}
+
+.card-text h3{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+            /* footer */
+
+.first-footers{
+    background-image: url(./img/b14.png);
+    background-color: rgb(3, 30, 67);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+}
+
+.first-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.first-footer-text h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.first-footer-text p{
+    color: grey;
+}
+
+.first-footer-text span{
+    color: gold;
+}
+
+.first-footer-email{
+    background-color: white;
+    height: 50px;
+    width: 400px;
+}
+
+.input input{
+    width: 300px;
+    height: 50px;
+    padding: 0 20px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+}
+
+.input button{
+    height: 50px;
+    width: 96px;
+    border: none;
+    background-color: rgb(0, 160, 131);
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+.second-footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.secont-footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.secont-footer-text h3{
+    font-size: 20px;
+}
+
+.secont-footer-text p{
+    cursor: pointer;
+    color: rgb(160, 160, 160);
+}
+
+.secont-footer-text i{
+    font-size: 22px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.secont-footer-text img{
+    cursor: pointer;
+}
+
+
+
+
+
+@keyframes animation{
+    from{transform: translateX(300px);}
+    to{transform: translateX(0);}
+}
+
+
+
+@media (max-width: 440px){
+
+    .menu{
+        width: 100%;
+    }
+
+    .input input{
+        width: 100%;
+    }
+
+    .first-footer{
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .input button{
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 700px){
+
+    .menu-icon{
+        display: flex;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .card-img{
+        width: 100%;
+    }
+
+    .card-img img{
+        width: 100%;
+    }
+
+    .first-footer{
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .input button{
+        margin-top: 5px;
+    }
+
+    .second-footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1025px){
+    .card{
+        flex-wrap: wrap;
+    }
+
+    .card-text{
+        text-align: center;
+    }
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#642bff, #ff22e6);
+    border-radius: 30px;
+}
